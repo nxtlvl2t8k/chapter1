@@ -10,9 +10,5 @@
 
 @interface ViewController : UIViewController
 
-
-@property (nonatomic) NSInteger *numList;
-
-
 @end
 
