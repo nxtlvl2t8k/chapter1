@@ -8,7 +8,9 @@
 
 #import "Car.h"
 
-@implementation Car
+@implementation Car {
+    
+}
 
 @synthesize model = _model;
 

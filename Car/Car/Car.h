@@ -13,6 +13,8 @@
 
 @property (copy) NSString *model;
 
+-(id)initwithModel: (NSString *)model;
+
 
 - (void)drive;
 
