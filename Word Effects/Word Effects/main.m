@@ -12,14 +12,14 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
         bool userWantsToContinue = true;
-        char play;
+        char play[255];
         
         while (userWantsToContinue) {
             
-//            printf("Do you want to continue (y/n) ");
-//            scanf("%c", &play);
-//            
-//            if (play == 'y') {
+            printf("Do you want to continue (y/n) ");
+            fgets(play, 255, stdin);
+            
+            if (play[0] == 'y') {
             
                 //255 unit long array of characters
                 char inputChars[255];
@@ -59,9 +59,9 @@ int main(int argc, const char * argv[]) {
                 }
                 NSLog(@"%@", returnDash);
                 
-//            }else {
-//                return 0;
-            
+            }else {
+                return 0;
+            }
         }
         
     }
