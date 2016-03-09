@@ -13,7 +13,7 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *email;
 
--(NSString *) name;
--(NSString *) email;
+//-(NSString *) name;
+//-(NSString *) email;
 
 @end
