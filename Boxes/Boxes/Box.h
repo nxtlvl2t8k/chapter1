@@ -17,7 +17,7 @@
 
 
 -(float)volume;
--(float)biggerThen:(Box*)otherBox;
+-(float)biggerThan:(Box*)otherBox;
 
 - (instancetype)initWithWidth:(float)width height:(float) height length:(float) length;
 

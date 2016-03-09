@@ -28,7 +28,7 @@
     return self.width * self.length * self.height;
 }
 
--(float) biggerThen:(Box *)otherBox {
+-(float) biggerThan:(Box *)otherBox {
     if ([self volume] > [otherBox volume]) {
         return ([self volume] / [otherBox volume]);
         
