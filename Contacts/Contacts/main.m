@@ -7,11 +7,29 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "InputCollector.h"
+#import "Contact.h"
+#import "ContactList.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+
+        char createNew[255];
+        
+        while (true) {
+            
+        
+        
+        NSLog(@"What would you like do next? new - Create a new contact list - List all contacts quit - Exit Application > %s", createNew);
+        fgets(createNew, 255, stdin);
+            if (@"new") {
+                
+                
+            }
+        
+        
+        
+            }
     }
     return 0;
 }
