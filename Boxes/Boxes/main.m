@@ -23,7 +23,6 @@ int main(int argc, const char * argv[]) {
             
         }else
             NSLog(@"Box B is Bigger by %@ times", box2);
-        
     
     }
     return 0;
