@@ -19,6 +19,11 @@
     return self;
 }
 
+-(int)roll {
+    [self randomValue];
+    return self.currentValue;
+}
+
 -(void)randomValue {
     self.currentValue = arc4random_uniform(6) + 1;
 }

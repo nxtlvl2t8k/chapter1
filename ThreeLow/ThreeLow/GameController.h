@@ -8,9 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface GameController : NSObject
 
+@property (nonatomic) NSMutableArray *rolledDice;
+@property (nonatomic) NSMutableSet *held;
+
+-(void)roll;
 -(void)dataModel;
 -(void)controller;
 -(void)holdDie;
+
+
 @end

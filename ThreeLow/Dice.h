@@ -13,7 +13,7 @@
 @property int currentValue;
 
 -(void)randomValue;
-//-(int)currentValue;
+-(int)roll;
 
 
 @end
