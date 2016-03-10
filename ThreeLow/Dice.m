@@ -10,20 +10,32 @@
 
 @implementation Dice
 
-- (instancetype)initEndValue:(float)endValue
+- (instancetype)init
 {
     self = [super init];
     if (self) {
-        
+        [self randomValue];
     }
     return self;
 }
 
--(int)randomValue {
-    return arc4random_uniform(6) + 1;
-    
+-(void)randomValue {
+    self.currentValue = arc4random_uniform(6) + 1;
 }
 
+//-(int)currentValue {
+//    self.currentDie = [self randomValue] ;
+//    
+//    return self.currentDie;
+//}
 
+- (NSString *)description {
+    NSString * description = ({
+        description = [super description];
+        description = [description stringByAppendingFormat:@" - value %@", @(self.currentValue)];
+        description;
+    });
+    return description;
+}
 
 @end
