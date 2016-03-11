@@ -25,5 +25,19 @@
     [self.contactList addObject:newContact];
 }
 
+-(void)displayList{
+    
+    for (int i=0; i<self.contactList.count; i++) {
+        Contact * contact = self.contactList[i];
+        NSLog(@"%d: %@ %@", i, contact.name, contact.email);
+    }
+    
+    
+//    for (Contact *contact in self.contactList) {
+//        NSLog(@"%lu: %@ %@", (unsigned long)[self.contactList indexOfObject:contact], contact.name, contact.email);
+//    }
+}
+
+
 
 @end

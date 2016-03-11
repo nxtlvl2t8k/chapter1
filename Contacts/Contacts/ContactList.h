@@ -15,6 +15,7 @@
 
 
 -(void)addContact:(Contact *) newContact;
+-(void)displayList;
 
 
 

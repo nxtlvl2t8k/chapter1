@@ -14,6 +14,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
+        ContactList *list = [[ContactList alloc] init];
         
         while (true) {
 
@@ -28,15 +29,22 @@ int main(int argc, const char * argv[]) {
             //            NSString *itemMinusReturn = [[getMenuItem componentsSeparatedByString:@"\n"] firstObject];
             if ([input isEqualToString: @"new"]) {
               
-                NSString *inputContactName = @"What is your Name";
-                NSString *newContactName = [menuPick inputForPrompt:inputContactName];
-                NSString *inputContactEmail = @"What is your Email";
-                NSString *newContactEmail = [menuPick inputForPrompt:inputContactEmail];
+                Contact *newEntry = [[Contact alloc] init];
                 
-                ContactList *newEntry = [[ContactList alloc] addContact:newContactName];
-                NSLog(@"%@ %@", newEntry.name, newEntry.email);
-                NSLog(@"Inside new!");
+                NSString *newContactName = [menuPick inputForPrompt:@"What is Your Name"];
+                NSLog(@"Your Name is %@",newContactName);
+                newEntry.name = newContactName;
+
+                NSString *newContactEmail = [menuPick inputForPrompt:@"What is your Email"];
+                NSLog(@"Your Email is %@", newContactEmail);
+                newEntry.email = newContactEmail;
                 
+                [list addContact:newEntry];
+
+            }else if ([input isEqualToString:@"list"]) {
+                [list displayList];
+            
+            
                 //                NSLog(@"Enter your Name and Email %@", newContact);
                 //                Contact *newContact = [[Contact alloc] name];
                 //
