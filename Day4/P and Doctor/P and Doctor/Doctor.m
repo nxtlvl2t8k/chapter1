@@ -9,6 +9,7 @@
 #import "Doctor.h"
 #import "Patient.h"
 
+
 @implementation Doctor
 
 - (instancetype)initWithName:(NSString*)name field:(NSString*)field
@@ -17,21 +18,30 @@
     if (self) {
         _name = name;
         _field = field;
+        _patientDB = [[NSMutableSet alloc] init];
+
+        
     }
     return self;
 }
 
-- (void)acceptPatient:(Patient *)patient{
-    if (hasheathCard) {
-        Doctor.Patient = [[NSArray patients]addObject:@"Scott"];
-    }else if {
-        NSLog(@"Doesnt have Healthcard")
+-(void)patientVisit:(Patient *)patient {
+    if (patient.healthcard) {
+        NSLog(@"Accepted");
+        [self.patientDB addObject:patient];
+        
+        
+        
+        
     }
-    
+
 }
 
-- (void)giveMeds:(Patient *)patient{
-    
-}
+
 
 @end
+
+
+//- (void)giveMeds:(Patient *)patient{
+//
+//}

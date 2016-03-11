@@ -13,11 +13,15 @@
 
 @property (nonatomic) NSString* name;
 @property (nonatomic) NSString* field;
+@property (nonatomic) NSMutableSet *patientDB;
 
--(void)patientVisit;
 
--(instancetype)initWithName:(NSString*)name field:(NSString*)field;
-- (void)acceptPatient:(Patient *)patient;
-- (void)giveMeds:(Patient *)patient;
+-(void)patientVisit:(Patient *)patient;
+
+- (instancetype)initWithName:(NSString*)name field:(NSString*)field;
+
 
 @end
+
+//- (void)acceptPatient:(Patient *)patient;
+//- (void)giveMeds:(Patient *)patient;

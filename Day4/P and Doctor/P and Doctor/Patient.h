@@ -11,12 +11,14 @@
 
 @interface Patient : NSObject
 
+- (instancetype)initWithName:(NSString*)name age:(NSString*)age hasHealthCard:(BOOL)healthcard;
+
 @property (nonatomic) NSString* name;
 @property (nonatomic) NSString* age;
 @property (nonatomic) BOOL healthcard;
 
-- (instancetype)initWithName:(NSString*)name Age:(NSString*)age HasHealthCard:(BOOL)healthcard;
 - (void)visitDoctor:(Doctor *)doc;
-- (void)requestMeds:(Doctor *)doc;
 
 @end
+
+//- (void)requestMeds:(Doctor *)doc;

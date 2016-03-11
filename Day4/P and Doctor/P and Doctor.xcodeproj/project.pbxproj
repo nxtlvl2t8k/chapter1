@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D528C66D1C920120000E0F3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D528C66C1C920120000E0F3B /* main.m */; };
-		D528C6751C92023C000E0F3B /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = D528C6741C92023C000E0F3B /* Doctor.m */; };
-		D528C6781C92024A000E0F3B /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = D528C6771C92024A000E0F3B /* Patient.m */; };
+		D528C6B01C9259E2000E0F3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D528C6AF1C9259E2000E0F3B /* main.m */; };
+		D528C6BA1C925A1B000E0F3B /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = D528C6B71C925A1B000E0F3B /* Doctor.m */; };
+		D528C6BB1C925A1B000E0F3B /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = D528C6B91C925A1B000E0F3B /* Patient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D528C6671C920120000E0F3B /* CopyFiles */ = {
+		D528C6AA1C9259E2000E0F3B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,16 +25,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D528C6691C920120000E0F3B /* P & Doctor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "P & Doctor"; path = "/Users/scottmayhew/Desktop/Lighthouse/assignments/Day4/P & Doctor/build/Debug/P & Doctor"; sourceTree = "<absolute>"; };
-		D528C66C1C920120000E0F3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D528C6731C92023B000E0F3B /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
-		D528C6741C92023C000E0F3B /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
-		D528C6761C92024A000E0F3B /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
-		D528C6771C92024A000E0F3B /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		D528C6AC1C9259E2000E0F3B /* P and Doctor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "P and Doctor"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D528C6AF1C9259E2000E0F3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D528C6B61C925A1B000E0F3B /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
+		D528C6B71C925A1B000E0F3B /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
+		D528C6B81C925A1B000E0F3B /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		D528C6B91C925A1B000E0F3B /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D528C6661C920120000E0F3B /* Frameworks */ = {
+		D528C6A91C9259E2000E0F3B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,91 +44,100 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D528C6601C920120000E0F3B = {
+		D528C6A31C9259E2000E0F3B = {
 			isa = PBXGroup;
 			children = (
-				D528C66B1C920120000E0F3B /* P & Doctor */,
+				D528C6AE1C9259E2000E0F3B /* P and Doctor */,
+				D528C6AD1C9259E2000E0F3B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D528C66B1C920120000E0F3B /* P & Doctor */ = {
+		D528C6AD1C9259E2000E0F3B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D528C66C1C920120000E0F3B /* main.m */,
-				D528C6731C92023B000E0F3B /* Doctor.h */,
-				D528C6741C92023C000E0F3B /* Doctor.m */,
-				D528C6761C92024A000E0F3B /* Patient.h */,
-				D528C6771C92024A000E0F3B /* Patient.m */,
+				D528C6AC1C9259E2000E0F3B /* P and Doctor */,
 			);
-			path = "P & Doctor";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D528C6AE1C9259E2000E0F3B /* P and Doctor */ = {
+			isa = PBXGroup;
+			children = (
+				D528C6AF1C9259E2000E0F3B /* main.m */,
+				D528C6B61C925A1B000E0F3B /* Doctor.h */,
+				D528C6B71C925A1B000E0F3B /* Doctor.m */,
+				D528C6B81C925A1B000E0F3B /* Patient.h */,
+				D528C6B91C925A1B000E0F3B /* Patient.m */,
+			);
+			path = "P and Doctor";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D528C6681C920120000E0F3B /* P & Doctor */ = {
+		D528C6AB1C9259E2000E0F3B /* P and Doctor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D528C6701C920120000E0F3B /* Build configuration list for PBXNativeTarget "P & Doctor" */;
+			buildConfigurationList = D528C6B31C9259E2000E0F3B /* Build configuration list for PBXNativeTarget "P and Doctor" */;
 			buildPhases = (
-				D528C6651C920120000E0F3B /* Sources */,
-				D528C6661C920120000E0F3B /* Frameworks */,
-				D528C6671C920120000E0F3B /* CopyFiles */,
+				D528C6A81C9259E2000E0F3B /* Sources */,
+				D528C6A91C9259E2000E0F3B /* Frameworks */,
+				D528C6AA1C9259E2000E0F3B /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "P & Doctor";
-			productName = "P & Doctor";
-			productReference = D528C6691C920120000E0F3B /* P & Doctor */;
+			name = "P and Doctor";
+			productName = "P and Doctor";
+			productReference = D528C6AC1C9259E2000E0F3B /* P and Doctor */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D528C6611C920120000E0F3B /* Project object */ = {
+		D528C6A41C9259E2000E0F3B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Huge Holdings Inc";
 				TargetAttributes = {
-					D528C6681C920120000E0F3B = {
+					D528C6AB1C9259E2000E0F3B = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
 			};
-			buildConfigurationList = D528C6641C920120000E0F3B /* Build configuration list for PBXProject "P & Doctor" */;
+			buildConfigurationList = D528C6A71C9259E2000E0F3B /* Build configuration list for PBXProject "P and Doctor" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = D528C6601C920120000E0F3B;
-			productRefGroup = D528C6601C920120000E0F3B;
+			mainGroup = D528C6A31C9259E2000E0F3B;
+			productRefGroup = D528C6AD1C9259E2000E0F3B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D528C6681C920120000E0F3B /* P & Doctor */,
+				D528C6AB1C9259E2000E0F3B /* P and Doctor */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D528C6651C920120000E0F3B /* Sources */ = {
+		D528C6A81C9259E2000E0F3B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D528C6781C92024A000E0F3B /* Patient.m in Sources */,
-				D528C6751C92023C000E0F3B /* Doctor.m in Sources */,
-				D528C66D1C920120000E0F3B /* main.m in Sources */,
+				D528C6BB1C925A1B000E0F3B /* Patient.m in Sources */,
+				D528C6BA1C925A1B000E0F3B /* Doctor.m in Sources */,
+				D528C6B01C9259E2000E0F3B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D528C66E1C920120000E0F3B /* Debug */ = {
+		D528C6B11C9259E2000E0F3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -171,7 +180,7 @@
 			};
 			name = Debug;
 		};
-		D528C66F1C920120000E0F3B /* Release */ = {
+		D528C6B21C9259E2000E0F3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -207,14 +216,14 @@
 			};
 			name = Release;
 		};
-		D528C6711C920120000E0F3B /* Debug */ = {
+		D528C6B41C9259E2000E0F3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		D528C6721C920120000E0F3B /* Release */ = {
+		D528C6B51C9259E2000E0F3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -224,24 +233,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D528C6641C920120000E0F3B /* Build configuration list for PBXProject "P & Doctor" */ = {
+		D528C6A71C9259E2000E0F3B /* Build configuration list for PBXProject "P and Doctor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D528C66E1C920120000E0F3B /* Debug */,
-				D528C66F1C920120000E0F3B /* Release */,
+				D528C6B11C9259E2000E0F3B /* Debug */,
+				D528C6B21C9259E2000E0F3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D528C6701C920120000E0F3B /* Build configuration list for PBXNativeTarget "P & Doctor" */ = {
+		D528C6B31C9259E2000E0F3B /* Build configuration list for PBXNativeTarget "P and Doctor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D528C6711C920120000E0F3B /* Debug */,
-				D528C6721C920120000E0F3B /* Release */,
+				D528C6B41C9259E2000E0F3B /* Debug */,
+				D528C6B51C9259E2000E0F3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D528C6611C920120000E0F3B /* Project object */;
+	rootObject = D528C6A41C9259E2000E0F3B /* Project object */;
 }
