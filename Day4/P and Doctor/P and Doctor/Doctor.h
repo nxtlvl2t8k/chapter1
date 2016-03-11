@@ -18,10 +18,9 @@
 
 -(void)patientVisit:(Patient *)patient;
 
+-(void)requestMedsFor:(Patient *)patient withSymptom:(NSString*)symptom;
+
 - (instancetype)initWithName:(NSString*)name field:(NSString*)field;
 
 
 @end
-
-//- (void)acceptPatient:(Patient *)patient;
-//- (void)giveMeds:(Patient *)patient;

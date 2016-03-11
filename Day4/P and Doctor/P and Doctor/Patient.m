@@ -8,6 +8,8 @@
 
 #import "Patient.h"
 #import "Doctor.h"
+#import "Perscription.h"
+
 
 @implementation Patient
 
@@ -17,7 +19,8 @@
         _name = name;
         _age = age;
         _healthcard = healthcard;
-        
+        _wittenPrescriptions = [[NSMutableArray alloc] init];
+        _symptomList = [[NSMutableDictionary alloc] init];
     }
     return self;
 }
@@ -27,9 +30,24 @@
 }
 
 
-@end
+- (void)addPrescription:(Perscription*)prescription
+{
+    [self.wittenPrescriptions addObject:prescription];
+}
+
+//-(void)requestMeds:(Doctor *)doc {
+//    [doc giveMeds:self];
+//    
+//}
+
 
 //- (void)requestMeds:(Doctor *)doc {
 //    [doc giveMeds:self];
 //}
 //
+
+
+
+
+
+@end

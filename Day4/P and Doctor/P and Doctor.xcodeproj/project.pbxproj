@@ -10,6 +10,7 @@
 		D528C6B01C9259E2000E0F3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D528C6AF1C9259E2000E0F3B /* main.m */; };
 		D528C6BA1C925A1B000E0F3B /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = D528C6B71C925A1B000E0F3B /* Doctor.m */; };
 		D528C6BB1C925A1B000E0F3B /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = D528C6B91C925A1B000E0F3B /* Patient.m */; };
+		D528C6BE1C92829C000E0F3B /* Perscription.m in Sources */ = {isa = PBXBuildFile; fileRef = D528C6BD1C92829C000E0F3B /* Perscription.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		D528C6B71C925A1B000E0F3B /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
 		D528C6B81C925A1B000E0F3B /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
 		D528C6B91C925A1B000E0F3B /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		D528C6BC1C92829C000E0F3B /* Perscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Perscription.h; sourceTree = "<group>"; };
+		D528C6BD1C92829C000E0F3B /* Perscription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Perscription.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				D528C6B71C925A1B000E0F3B /* Doctor.m */,
 				D528C6B81C925A1B000E0F3B /* Patient.h */,
 				D528C6B91C925A1B000E0F3B /* Patient.m */,
+				D528C6BC1C92829C000E0F3B /* Perscription.h */,
+				D528C6BD1C92829C000E0F3B /* Perscription.m */,
 			);
 			path = "P and Doctor";
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 				D528C6BB1C925A1B000E0F3B /* Patient.m in Sources */,
 				D528C6BA1C925A1B000E0F3B /* Doctor.m in Sources */,
 				D528C6B01C9259E2000E0F3B /* main.m in Sources */,
+				D528C6BE1C92829C000E0F3B /* Perscription.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

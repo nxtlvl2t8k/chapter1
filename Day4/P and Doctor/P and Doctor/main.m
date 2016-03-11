@@ -17,15 +17,10 @@ int main(int argc, const char * argv[]) {
         Doctor *doc  = [[Doctor alloc] initWithName:@"" field:@""];
 
         [pat visitDoctor:doc];
+        [doc requestMedsFor:pat withSymptom: @"sneezing"];
+        
+        NSLog(@"%@", pat);
         
     }
         return 0;
 }
-
-//        NSArray *patients = [[NSArray alloc] init];
-//
-//        Patient *pat = [[Patient alloc] initWithName:@"" Age:@"" HasHealthCard:YES];
-//        Doctor *doc = [[Doctor alloc] initWithName:@"" field:@""];
-//
-//        [pat visitDoctor:doc];
-//        [pat requestMeds:doc];
