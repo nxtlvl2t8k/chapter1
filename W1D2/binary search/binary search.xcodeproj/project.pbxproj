@@ -237,6 +237,7 @@
 				D54B78431C8F9A95000B2A7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
