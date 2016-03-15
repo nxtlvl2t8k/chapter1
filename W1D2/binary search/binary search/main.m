@@ -15,7 +15,6 @@ int findElem(NSMutableArray *array, int st, int end, int elem);
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
-        
 //              int num [] = {1,4,2,200,5,4};
 //        int size = sizeof(num) / sizeof(int);
 //        int index = findElem(size, 0, size - 1, 15);
@@ -27,17 +26,13 @@ int main(int argc, char * argv[]) {
             //Create random number between 1-45 and save it in Array
             num = i + 1; //arc4random_uniform(45) + 1;
             [randomNumbers addObject:[NSNumber numberWithInt:num]];
-        
-
-            
         }
-                NSNumber *largest = [randomNumbers objectAtIndex:0];
-        
-                for (NSNumber * curr_num in randomNumbers) {
-                    if (curr_num.intValue > largest.intValue) {
-                        largest = curr_num;
-                    }
-                }
+        NSNumber *largest = [randomNumbers objectAtIndex:0];
+        for (NSNumber * curr_num in randomNumbers) {
+            if (curr_num.intValue > largest.intValue) {
+                largest = curr_num;
+            }
+        }
 //                NSLog(@"Largest Number in array is %@" , largest);
 //        NSLog(@"MyArray:\n%@", randomNumbers);
 
@@ -47,17 +42,10 @@ int main(int argc, char * argv[]) {
         int index = findElem(randomNumbers, 0, num-1, 100);
         NSLog(@"Number at index %i is %d", i, index);
         
-        
-        
-        
         NSDate *methodFinish = [NSDate date];
         NSTimeInterval executionTime = [methodFinish timeIntervalSinceDate:methodStart];
         NSLog(@"executionTime = %f", executionTime);
-   
-    
-    
-    
-    }
+   }
     return 0;
 }
 

@@ -13,6 +13,7 @@
 
 @property (nonatomic) NSMutableArray *rolledDice;
 @property (nonatomic) NSMutableSet *held;
+@property (nonatomic) NSArray *unicodeSymbols;
 
 -(void)roll;
 -(void)dataModel;

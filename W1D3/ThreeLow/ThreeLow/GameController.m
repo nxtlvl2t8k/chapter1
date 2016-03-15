@@ -40,6 +40,7 @@
         [self.rolledDice addObject:self.dice3];
         [self.rolledDice addObject:self.dice4];
         [self.rolledDice addObject:self.dice5];
+        self.unicodeSymbols = @[@"\u2680",@"\u2681",@"\u2682",@"\u2683",@"\u2684",@"\u2685"];
     }
     return self;
 }
@@ -52,7 +53,7 @@
         }
 
     }
-    NSLog(@"\n\n Dice1 Dice2 Dice2 Dice2 Dice2\n   %d --- %d --- %d --- %d --- %d\n", self.dice1.currentValue, self.dice2.currentValue, self.dice3.currentValue, self.dice4.currentValue, self.dice5.currentValue);
+    NSLog(@"\n\n Dice1 Dice2 Dice2 Dice2 Dice2\n   %d --- %d --- %d --- %d --- %d\n", self.dice1.currentValue, self.dice2.currentValue, self.dice3.currentValue, self.dice4.currentValue, [self.unicodeSymbols objectAtIndex:[self.dice5.(currentValue - 1)]; //self.dice5.currentValue);
 
 }
 
