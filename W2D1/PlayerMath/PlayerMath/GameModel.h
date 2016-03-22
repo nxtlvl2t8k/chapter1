@@ -9,15 +9,18 @@
 #import <Foundation/Foundation.h>
 #import "Player.h"
 
+
 @interface GameModel : NSObject
 
-@property (strong, nonatomic) Player *player1;
-@property (strong, nonatomic) Player *player2;
-@property (strong, nonatomic) NSNumber* number;
-@property (strong, nonatomic) NSNumber* score;
+@property (nonatomic) int number1;
+@property (nonatomic) int number2;
+@property (nonatomic) int answer;
 
-- (instancetype)initWithPlayer:(NSNumber *) player;
+@property (nonatomic) Player *player1;
+@property (nonatomic) Player *player2;
+@property (nonatomic) Player *currentPlayer;
 
--(void)updateEverything;
+-(NSString *)generateQuestion;
+-(void)checkAnswer:(int)inputAnswer;
 
 @end

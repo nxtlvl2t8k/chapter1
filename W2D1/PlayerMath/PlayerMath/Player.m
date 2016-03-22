@@ -10,7 +10,14 @@
 
 @implementation Player
 
-int score = 3;
-
+- (instancetype)initWithName:(NSString *)name andScore:(int)score
+{
+    self = [super init];
+    if (self) {
+        self.name = name;
+        self.score = score;
+    }
+    return self;
+}
 
 @end

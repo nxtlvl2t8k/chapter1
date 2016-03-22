@@ -10,4 +10,9 @@
 
 @interface Player : NSObject
 
+@property (nonatomic,strong) NSString *name;
+@property (nonatomic,assign) int score;
+
+- (instancetype)initWithName:(NSString *)name andScore:(int)score;
+
 @end
